@@ -8,14 +8,13 @@ var inputNumber = parseInt(window.prompt("number: "), 10);
 if(isNaN(inputNumber)){
 	console.log("it's not a number");
 } else {
-
-switch (inputNumber % 2) {
-	case 1:
-				console.log("Odd");
-				break;
-	case 0:
-				console.log("Even");
-				break;
+	switch (inputNumber % 2) {
+		case 1:
+			console.log("Odd");
+			break;
+		case 0:
+			console.log("Even");
+			break;
 	}
 }
 ```
