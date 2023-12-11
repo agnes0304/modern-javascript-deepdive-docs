@@ -147,3 +147,9 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 </br>
 </br>
 
+<div align="right">
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fagnes0304%2Fmodern-javascript-deepdive-docs&count_bg=%23232323&title_bg=%23232323&icon=javascript.svg&icon_color=%23F7DF1E&title=HI&edge_flat=false)](https://hits.seeyoufarm.com)
+  
+</div>
+
