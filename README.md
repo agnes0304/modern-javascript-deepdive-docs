@@ -53,7 +53,7 @@ KEYWORDS
 모던 자바스트립트 딥다이브를 들어가며
 </td>
 <td align="center">
-ES6, V8
+<code>ES6</code>, <code>V8</code>
 </td>
 </tr>
 
@@ -65,7 +65,7 @@ ES6, V8
 변수, 표현식, 문
 </td>
 <td align="center">
-variable, identifier, literal, expression, statement 
+변수(variable), 식별자(identifier), 리터럴(literal), 표현식(expression), 문(statement) 
 </td>
 </tr>
 
@@ -77,7 +77,7 @@ variable, identifier, literal, expression, statement
 데이터 타입, 연산자, 타입변환과 단축평가
 </td>
 <td align="center">
-type, implicit/explicit coercion, type casting, &&, ||, ?., ??
+type, 암묵적/명시적 타입변환(implicit/explicit coercion), type casting, <code>&&</code>, <code>||</code>, <code>?.</code>, <code>??</code>
 </td>
 </tr>
 
@@ -89,7 +89,7 @@ type, implicit/explicit coercion, type casting, &&, ||, ?., ??
 제어문
 </td>
 <td align="center">
-switch, label statement, for, while, break, continue
+switch문, label문, <code>for</code>, <code>while</code>, <code>break</code>, <code>continue</code>
 </td>
 </tr>
 
@@ -101,7 +101,7 @@ switch, label statement, for, while, break, continue
 Object(객체) 리터럴, 원시값과의 비교
 </td>
 <td align="center">
-object, pass by value, pass by reference, 
+object, <code>pass by value</code>, <code>pass by reference</code>
 </td>
 </tr>
 
