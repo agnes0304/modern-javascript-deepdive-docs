@@ -50,7 +50,7 @@ KEYWORDS
 01, 02, 03
 </td>
 <td align="center">
-모던 자바스트립트 딥다이브를 들어가며
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/01-02-03-introduction">모던 자바스트립트 딥다이브를 들어가며</a>
 </td>
 <td align="center">
 <code>ES6</code>, <code>V8</code>
@@ -62,10 +62,10 @@ KEYWORDS
 04, 05
 </td>
 <td align="center">
-변수, 표현식, 문
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/04-05-variable-expression-statement">변수, 표현식, 문</a>
 </td>
 <td align="center">
-변수(variable), 식별자(identifier), 리터럴(literal), 표현식(expression), 문(statement) 
+변수(variable), 식별자(identifier), 리터럴(literal), 표현식(expression), 문(statement)
 </td>
 </tr>
 
@@ -74,7 +74,7 @@ KEYWORDS
 06, 07, 09
 </td>
 <td align="center">
-데이터 타입, 연산자, 타입변환과 단축평가
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/06-07-09-type-operators-typeCoercion">데이터 타입, 연산자, 타입변환과 단축평가</a>
 </td>
 <td align="center">
 type, 암묵적/명시적 타입변환(implicit/explicit coercion), type casting, <code>&&</code>, <code>||</code>, <code>?.</code>, <code>??</code>
@@ -86,7 +86,7 @@ type, 암묵적/명시적 타입변환(implicit/explicit coercion), type casting
 08
 </td>
 <td align="center">
-제어문
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/08-control-flow-statements">제어문</a>
 </td>
 <td align="center">
 switch문, label문, <code>for</code>, <code>while</code>, <code>break</code>, <code>continue</code>
@@ -98,7 +98,7 @@ switch문, label문, <code>for</code>, <code>while</code>, <code>break</code>, <
 10, 11
 </td>
 <td align="center">
-Object(객체) 리터럴, 원시값과의 비교
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/10-11-object-comparison-to-primitive">Object(객체) 리터럴, 원시값과의 비교</a>
 </td>
 <td align="center">
 object, <code>pass by value</code>, <code>pass by reference</code>
@@ -122,7 +122,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 13, 14, 15, 24
 </td>
 <td align="center">
-스코프, 전역 변수, let/const와 블록레벨 스코프, 클로저
+스코프, 전역 변수, <code>let/const</code>, 블록레벨 스코프, 클로저
 </td>
 <td align="center">
 
