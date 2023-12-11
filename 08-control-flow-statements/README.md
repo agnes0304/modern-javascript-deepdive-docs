@@ -32,11 +32,13 @@ for문과 while문이 대표적이다.
     for (let i = 0; i < 5; i++) {
         console.log(i); // prints 0, 1, 2, 3, 4
     }
+    
     // for - in 문: 객체의 속성이나 배열의 요소를 임의의 순서로 반복. 특히 객체 속성을 반복할 때 유용.
     const person = {firstName:"John", lastName:"Doe"};
     for (let key in person) {
         console.log(key, person[key]); // prints "firstName John" and then "lastName Doe"
     }
+    
     // for - of 문: 배열,문자열,Map,Set 등 이터러블 객체의 값을 반복하여 각 값에 대한 코드 블록을 실행하는 데 사용.
     const numbers = [1, 2, 3, 4, 5];
     for (let number of numbers) {
