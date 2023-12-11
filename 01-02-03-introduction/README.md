@@ -41,12 +41,12 @@ ECMAScript의 약어.
 
 <table>
   <tr>
-    <th align="center" width="300">ES5(2009)</th>
-    <th align="center" width="300">ES6(2015)</th>
+    <th align="center" width="500">ES5(2009)</th>
+    <th align="center" width="500">ES6(2015)</th>
   </tr>
   <tr>
-    <td align="center">HTML5와 함께 출현한 표준안 </br> <code>JSON</code>, <code>strict mode</code>, 접근자 프로퍼티 ,프로퍼티 어트리뷰트 제어 ,향상된 배열 조작 기능(<code>forEach, map, filter, reduce, some, every</code>)</td>
-    <td align="center"><code>let/const</code>, 클래스, 화살표 함수, 템플릿 리터럴, 구조분해 할당(<code>destructuring assignment</code>), <code>spread</code>, rest 파라미터, <code>Symbol</code>, <code>Promise</code>, <code>Map/Set</code>, iterable(이터러블) , <code>for - of</code>, 제너레이터, Proxy, 모듈 <code>import/export</code></td>
+    <td align="center">HTML5와 함께 출현한 표준안 </br><code>JSON</code>, <code>strict mode</code>, 접근자 프로퍼티, 프로퍼티 어트리뷰트 제어, </br>향상된 배열 조작 기능</br>(<code>forEach, map, filter, reduce, some, every</code>)</td>
+    <td align="center"><code>let/const</code>, 클래스, 화살표 함수, 템플릿 리터럴,</br>구조분해 할당(<code>destructuring assignment</code>), <code>spread</code>,</br>rest 파라미터, <code>Symbol</code>, <code>Promise</code>, <code>Map/Set</code>,</br>iterable(이터러블) , <code>for - of</code>, 제너레이터, Proxy,</br>모듈 <code>import/export</code></td>
   </tr>
 </table>
 
