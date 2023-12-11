@@ -30,7 +30,7 @@ console.log(typeof key);  // symbol
 
 객체타입(Object type)이라고 하기도 한다. 
 </br>자바스크립트를 이루고 있는 거의 모든 것이 객체이다.
-- 객체 리터럴에서 자세히 다룰 예정 : <a href="">바로가기</a>
+- 객체 리터럴에서 자세히 다룰 예정 : <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/10-11-object-comparison-to-primitive/README.md#%EA%B0%9D%EC%B2%B4-%EB%A6%AC%ED%84%B0%EB%9F%B4object">바로가기</a>
 
 
 </br></br>
