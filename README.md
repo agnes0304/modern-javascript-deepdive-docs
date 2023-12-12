@@ -170,7 +170,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 20
 </td>
 <td align="center">
-"strict mode"
+<code>"strict mode"</code>
 </td>
 <td align="center">
 <code>'strict mode'</code>
