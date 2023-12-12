@@ -62,7 +62,7 @@ KEYWORDS
 04, 05
 </td>
 <td align="center">
-<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/04-05-variable-expression-statement">🫣세미콜론(<code>;</code>)과의 눈치싸움</a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/04-05-variable-expression-statement">변수, 식별자, 리터럴, 표현식, 명령문</a>
 </td>
 <td align="center">
 변수(variable), 식별자(identifier), 리터럴(literal), 표현식(expression), 문(statement)
@@ -74,7 +74,7 @@ KEYWORDS
 06, 07, 09
 </td>
 <td align="center">
-<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/06-07-09-type-operators-typeCoercion">🫠혼돈의 타입변환과 막 쓰고 있던 단축평가</a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/06-07-09-type-operators-typeCoercion">JS의 데이터 타입과 타입변환, 연산자와 단축평가</a>
 </td>
 <td align="center">
 operator, 암묵적/명시적 타입변환(implicit/explicit coercion), type casting, <code>&&</code>, <code>||</code>, <code>?.</code>, <code>??</code>
@@ -86,7 +86,7 @@ operator, 암묵적/명시적 타입변환(implicit/explicit coercion), type cas
 08
 </td>
 <td align="center">
-<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/08-control-flow-statements">🛠️제어문: 잘 알면, 더 잘 쓸 수도 있었던 것을</a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/08-control-flow-statements">제어문 간단히 보기</a>
 </td>
 <td align="center">
 switch문, label문, <code>for</code>, <code>while</code>, <code>break</code>, <code>continue</code>
@@ -98,7 +98,7 @@ switch문, label문, <code>for</code>, <code>while</code>, <code>break</code>, <
 10, 11
 </td>
 <td align="center">
-<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/10-11-object-comparison-to-primitive">object(객체)와 원시타입과의 비교</a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/10-11-object-comparison-to-primitive">Object(객체), 원시 타입과의 비교</a>
 </td>
 <td align="center">
 object, <code>pass by value</code>, <code>pass by reference</code>
