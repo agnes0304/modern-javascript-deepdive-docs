@@ -50,7 +50,7 @@ KEYWORDS
 01, 02, 03
 </td>
 <td align="center">
-<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/01-02-03-introduction">🤿 심호흡하기: 모던 자바스트립트 딥다이브를 들어가며</a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/01-02-03-introduction">모던 자바스트립트 딥다이브를 들어가며</a>
 </td>
 <td align="center">
 <code>ES6</code>, <code>V8</code>
@@ -131,13 +131,73 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 
 <tr>
 <td align="center">
-
+16
 </td>
 <td align="center">
-
+프로퍼티 어트리뷰트(Property Attribute)
 </td>
 <td align="center">
+내부 슬롯, 내부 메서드
+</td>
+</tr>
 
+<tr>
+<td align="center">
+17
+</td>
+<td align="center">
+생성자 함수에 의한 객체 생성
+</td>
+<td align="center">
+생성자함수, 객체
+</td>
+</tr>
+
+<tr>
+<td align="center">
+19
+</td>
+<td align="center">
+프로토타입
+</td>
+<td align="center">
+<code>prototype</code>, <code>__proto__</code>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+20
+</td>
+<td align="center">
+"strict mode"
+</td>
+<td align="center">
+<code>'strict mode'</code>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+21
+</td>
+<td align="center">
+빌트인 객체
+</td>
+<td align="center">
+표준빌트인객체, 래퍼객체, 전역객체, 빌트인전역함수, 빌트인전역프로퍼티
+</td>
+</tr>
+
+<tr>
+<td align="center">
+sample
+</td>
+<td align="center">
+sample
+</td>
+<td align="center">
+sample
 </td>
 </tr>
 
