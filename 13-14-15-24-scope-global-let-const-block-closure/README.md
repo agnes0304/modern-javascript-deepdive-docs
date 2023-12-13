@@ -111,11 +111,28 @@
     - 런타임 이전에 선언만 진행하고 초기화(`undefined`)는 변수 선언문에 도달하면 진행 = 일시적 사각지대
     
     ```javascript
-    
+    // ▶️ var 변수 호이스팅
+    console.log(test); // undefined
+    var test;
+    console.log(test); // undefined
+    test = 1;
+    console.log(test); // 1
 
+    // ▶️ let 변수 호이스팅
+    console.log(sample); // ReferenceError = 일시적 사각지대
+    let sample;
+    console.log(sample); // undefined
+    sample = 1;
+    console.log(sample); // 1
     ```
     
 - `let`으로 선언한 전역변수는 전역 객체 프로퍼티가 아니다. (실행 컨텍스트-렉시컬 환경 레코드에서 더 자세히 나옴)
+
+</br>
+
+>### 블록레벨 스코프
+>- 모든 코드 블록을 로컬 스코프로 인정한다.
+>- 반복문, 조건문, `try-catch`문 등이 해당
 
 </br>
 
@@ -124,14 +141,12 @@
 - `let`과 상당부분 동일
 - `const`로 선언한 변수는 선언과 초기화를 동시에 해야 한다.
     - 선언만 할 경우 `SyntaxError`
+    ```jsx
+    const test; // SyntaxError
+    const test = 1;
+    ```
 - 재할당 금지
 
-</br></br>
-
-### 블록레벨 스코프
-
-- 모든 코드 블록을 로컬 스코프로 인정한다.
-- 반복문, 조건문, `try-catch`문 등이 해당
 
 </br></br>
 
