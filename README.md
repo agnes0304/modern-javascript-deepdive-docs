@@ -170,7 +170,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 20
 </td>
 <td align="center">
-<code>"strict mode"</code>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/20-strictMode"><code>"strict mode"</code></a>
 </td>
 <td align="center">
 <code>'strict mode'</code>
@@ -182,7 +182,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 21
 </td>
 <td align="center">
-빌트인 객체
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/21-builtInObject">빌트인 객체</a>
 </td>
 <td align="center">
 표준빌트인객체, 래퍼객체, 전역객체, 빌트인전역함수, 빌트인전역프로퍼티
@@ -191,13 +191,37 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 
 <tr>
 <td align="center">
-sample
+22
 </td>
 <td align="center">
-sample
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/22-this"><code>this</code></a>
 </td>
 <td align="center">
-sample
+<code>this</code>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+23
+</td>
+<td align="center">
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/23-executionContext">실행 컨텍스트</a>
+</td>
+<td align="center">
+소스코드, 실행 컨텍스트 스택(콜스택), 렉시컬 환경
+</td>
+</tr>
+
+<tr>
+<td align="center">
+25
+</td>
+<td align="center">
+클래스
+</td>
+<td align="center">
+<code>class</code>, <code>constructor</code>, 메서드, 인스턴스, 상속
 </td>
 </tr>
 
