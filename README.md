@@ -218,7 +218,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 25
 </td>
 <td align="center">
-클래스
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/25-class/README.md">새로운 객체 생성 메커니즘, 클래스</a>
 </td>
 <td align="center">
 <code>class</code>, <code>constructor</code>, 메서드, 인스턴스, 상속
