@@ -51,7 +51,7 @@ sample.bind(test2)(); // test2
 - 기본적으로 window(전역 객체)바인딩
 - strict mode인 경우 undefined
 - 어떠한 함수(중첩, 콜백)라도 일반함수로 호출되면 동일하게 window 바인딩.
-</br>🔗 내부 this 바인딩을 메서드 this와 일치하기 위한 방법
+</br>🔗 <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/22-this/README.md#this-%EB%B0%94%EC%9D%B8%EB%94%A9%EC%9D%84-%EC%9D%BC%EC%B9%98%EC%8B%9C%ED%82%AC-%EC%88%98-%EC%9E%88%EB%8A%94-%EB%B0%A9%EB%B2%95">내부 this 바인딩을 메서드 this와 일치하기 위한 방법</a>
     
 </br>
 
