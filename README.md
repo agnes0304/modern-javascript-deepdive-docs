@@ -110,10 +110,10 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 12, 18, 26
 </td>
 <td align="center">
-함수, 일급객체, ES6 함수의 추가 기능
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/12-18-26-function-firstClassObject-es6Function/README.md">함수, 일급객체, ES6 함수의 추가 기능</a>
 </td>
 <td align="center">
-
+함수, 일급객체, 함수객체, arguments, <code>__proto__</code>
 </td>
 </tr>
 
