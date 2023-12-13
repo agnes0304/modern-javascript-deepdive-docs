@@ -170,7 +170,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 20
 </td>
 <td align="center">
-<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/20-strictMode"><code>"strict mode"</code></a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/20-strictMode">"strict mode"</a>
 </td>
 <td align="center">
 <code>'strict mode'</code>
@@ -194,7 +194,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 22
 </td>
 <td align="center">
-<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/22-this"><code>this</code></a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/tree/main/22-this">this</a>
 </td>
 <td align="center">
 <code>this</code>
