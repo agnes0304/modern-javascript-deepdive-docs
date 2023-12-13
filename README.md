@@ -122,10 +122,10 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 13, 14, 15, 24
 </td>
 <td align="center">
-스코프, 전역 변수, <code>let/const</code>, 블록레벨 스코프, 클로저
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/13-14-15-24-scope-global-let-const-block-closure/README.md">스코프, 전역 변수, let/const, 블록레벨 스코프, 클로저</a>
 </td>
 <td align="center">
-
+전역, 지역(local), `let`, `const`, `var`, 렉시컬(lexical) 스코프, 렉시컬 환경, 클로저
 </td>
 </tr>
 
