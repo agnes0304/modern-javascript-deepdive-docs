@@ -172,7 +172,7 @@ const obj = {
 obj.print(); // 100
 ```
     
-2. `Function.prototype.apply/call/bind`를 활용할 수 있음. 바로가기
+2. `Function.prototype.apply/call/bind`를 활용할 수 있음. <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/22-this/README.md#bind">바로가기</a>
 3. 화살표 함수를 통해 바인딩 일치시킬 수 있음. 
     
 ```jsx
