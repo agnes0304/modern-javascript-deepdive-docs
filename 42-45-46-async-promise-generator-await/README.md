@@ -216,7 +216,7 @@ pending에서 settled로 변경되면 그 역은 불가능하다
 - 콜백 헬을 해결할 수 있는 방법.
 - `then`을 연속적으로 활용.
 - 어찌됐든 프로미스도 콜백 패턴을 사용하긴 한다.
-- 이를 위해 ES8에서 `async/await`가 등장했다. <a href="">바로 보기</a>
+- 이를 위해 ES8에서 `async/await`가 등장했다. <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/42-45-46-async-promise-generator-await/README.md#async--await">바로 보기</a>
 
 </br></br>
 
