@@ -1,8 +1,10 @@
 # 모던 자바스크립트 딥다이브
+>Modern Javascript DeepDive
 
-👤 개인 / 2023.11 ~ 🚧이사 진행 중(노션에서 깃허브로)🚧
+👤 개인 / 2023.11 ~ 🚧 이사 진행 중(노션에서 깃허브로) 🚧
 
-본 문서는 책 「모던 자바스크립트 딥다이브」를 공부하며 자바스크립트에 대한 레포 오너의 이해를 돕고, 어렴풋이 알고 있는 개념에 대한 환기를 위해 작성하였습니다.
+본 문서는 책 「모던 자바스크립트 딥다이브」를 공부하며 자바스크립트에 대한 레포 오너의 이해를 돕고, 
+</br>어렴풋이 알고 있는 개념에 대한 환기를 위해 작성하였습니다.
 
 </br>
 
@@ -21,8 +23,7 @@
 </br>
 
 공부 자료이다 보니 사견이 주석처럼 들어가 있을 수 있고 만약 있다면 이는 인용으로 처리.
-
-꼬리물기를 좋아하는 지라, 책에 없더라도 궁금한 부분에 대한 공부와 정리가 들어가있음. 이 부분은 tail-questions 폴더에 별도로 정리함. 
+</br>꼬리물기를 좋아하는 지라, 책에 없더라도 궁금한 부분에 대한 정리가 있을 수 있음. 이 부분은 tail-questions 폴더에 별도로 정리함. 
 
 </br>
 
@@ -225,7 +226,34 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 </td>
 </tr>
 
+<tr>
+<td align="center">
+47
+</td>
+<td align="center">
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/47-error/README.md">에러 발생과 적절한 핸들링</a>
+</td>
+<td align="center">
+<code>try{...}catch(err){...}</code>, Error 생성자 함수, <code>throw</code>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+48
+</td>
+<td align="center">
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/25-class/README.md">ES6 모듈</a>
+</td>
+<td align="center">
+<code>export</code>, <code>import</code>, <code>default</code>, 파일 스코프
+</td>
+</tr>
+
 </table>
+
+
+
 
 
 </br>
