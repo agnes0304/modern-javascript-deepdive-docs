@@ -57,13 +57,15 @@ const prettierJsonData = JSON.stringify(user, null, 2)
 - 서버로부터 전달받은 JSON을 클라이언트에서 객체로 사용하기 위해 사용.
 - deserializing
 
-</br>
+</br></br>
 
 # XMLHttpRequest
 
 - js를 통해서 http 요청을 전달하기 위해 사용
 - web api 일종
 - `XMLHttpRequest()` 생성자 함수로 객체를 생성해서 사용
+
+</br>
 
 ## XMLHttpRequest 객체
 
@@ -142,15 +144,29 @@ const prettierJsonData = JSON.stringify(user, null, 2)
 
 </br></br>
 
----
+# `fetch(url, option*)`
+>프로미스 챕터에 등장하는 내용을 옮김
 
-</br>
+- http 통신 기능을 제공하는 클라이언트 사이드 web api
+- 프로미스를 지원
+- http response 객체를 래핑한 프로미스 객체를 리턴
+- 에러처리에 유의
+    - fetch가 리턴하는 프로미스는 http 에러가 발생해도 boolean 타입의 ok상태를 false로 설정한 response 객체를 resolve함.
+    - 네트워크 장애, CORS에러만 reject한다.
+
+>`axios`는 모든 http 에러를 reject하는 프로미스를 리턴함(catch에서 모든 에러 처리 가능)
+
+</br></br>
+
+---
 
 # REST
 
 - **RE**presentational **S**tate **T**ransfer
 - 2000년 http 장점을 최대활용 할 수 있는 REST 아키텍쳐가 소개
 - 클라이언트가 서버의 리소스에 접근하는 방식을 규정한 아키텍처
+
+</br>
 
 ## REST API
 - REST를 기반으로 서비스 API를 구현한 것
