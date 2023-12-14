@@ -243,7 +243,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 41, 42, 45, 46
 </td>
 <td align="center">
-<a href="">자바스크립트의 비동기 프로그래밍과 비동기 처리 방식</a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/42-45-46-async-promise-generator-await/README.md">자바스크립트의 비동기 프로그래밍과 비동기 처리 방식</a>
 </td>
 <td align="center">
 <code>setTimeout</code>, <code>setInterval</code>, 디바운스, 스로틀, 태스크큐, 이벤트루프, 콜백패턴, <code>Promise</code>, 제너레이터, <code>async/await</code>
