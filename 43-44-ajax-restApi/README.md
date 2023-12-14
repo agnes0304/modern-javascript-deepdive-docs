@@ -146,6 +146,18 @@ const prettierJsonData = JSON.stringify(user, null, 2)
 
 </br>
 
-# REST API
+# REST
 
+- **RE**presentational **S**tate **T**ransfer
+- 2000년 http 장점을 최대활용 할 수 있는 REST 아키텍쳐가 소개
+- 클라이언트가 서버의 리소스에 접근하는 방식을 규정한 아키텍처
 
+## REST API
+- REST를 기반으로 서비스 API를 구현한 것
+- 구성(3요소)
+  - resource = URI(엔드포인트)
+  - verb = http 메서드
+  - representation = 페이로드
+
+>🚨 URI는 resource를 표현하는데 집중해야 하고 http 요청 메소드를 활용하여 그 요청 행위에 대한 정의를 한다.
+- URI에 가능하면 명사 사용을 지향하라
