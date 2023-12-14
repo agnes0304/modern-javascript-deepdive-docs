@@ -246,7 +246,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 <a href="">자바스크립트의 비동기 프로그래밍과 비동기 처리 방식</a>
 </td>
 <td align="center">
-<code>setTimeout</code>, <code>setInterval</code>, 디바운스, 스로틀, 태스크큐, 이벤트루프, 콜백패턴, <code>Promise</code>, <code>fetch</code>, 제너레이터, <code>async/await</code>
+<code>setTimeout</code>, <code>setInterval</code>, 디바운스, 스로틀, 태스크큐, 이벤트루프, 콜백패턴, <code>Promise</code>, 제너레이터, <code>async/await</code>
 </td>
 </tr>
 
@@ -259,7 +259,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/43-44-ajax-restApi/README.md">Ajax와 REST API</a>
 </td>
 <td align="center">
-JSON, <code>JSON.stringify</code>, <code>JSON.parse</code>, XMLHttpRequest, URI(엔드포인트)
+JSON, <code>JSON.stringify</code>, <code>JSON.parse</code>, XMLHttpRequest,<code>fetch</code>, URI(엔드포인트)
 </td>
 </tr>
 
