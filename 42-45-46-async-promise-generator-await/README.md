@@ -1,7 +1,36 @@
 >프로미스의 fetch 부분은 아래의 ajax로 이동함
 
-# 타이머
+# Timer
 
+- 함수 호출 스케줄링에 활용: 일정 시간 경과 후 함수 호출
+- JS엔진이 아니라 브라우저, node.js에서 제공하는 호스트 객체.
+    - JS엔진은 싱글 스레드 동작 방식(실행 컨텍스트 스택이 하나)이기 때문에 두 가지 이상의 태스크가 동시 동작할 수 없다.
+- 종류
+    - `setTimeout`/`clearTimeout`
+    - `setInterval`/`clearInterval`
+- setTimeout는 딱 한번 동작, interval은 반복동작
+- 비동기 처리 방식으로 동작 → 비동기 프로그래밍 설명 바로가기
+
+</br>
+
+## `setTimeout(func,ms)`/`clearTimeout`
+
+- 두 번째 인수로 전달받은 시간으로 단 한번 동작(ms단위), 생략할 경우 0이 기본값.
+- 타이머 종료후 콜백함수(`func`)가 호출
+    - 콜백 함수에 전달해야 할 인수가 있으면 3번째 이후 인자로 전달
+- 타이머 id를 리턴
+    - 브라우저 환경인 경우 숫자, node.js 환경인 경우 객체
+- `clearTimeout`에 id를 인수로 전달하며 타이머 취소
+
+</br>
+
+## `setInterval(func, ms)`/`clearInterval`
+
+- 타이머 만료 때마다 첫 번째 인수로 전달받은 콜백함수(`func`)가 반복 호출
+- 전달되는 인수는 `setTimeout`과 동일
+- 리턴되는 타이머 id를 `clearInterval`에 전달해서 타이머 취소
+
+</br></br>
 ---
 
 # 비동기 프로그래밍
