@@ -243,7 +243,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 48
 </td>
 <td align="center">
-<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/25-class/README.md">ES6 모듈</a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/48-module/README.md">ES6 모듈</a>
 </td>
 <td align="center">
 <code>export</code>, <code>import</code>, <code>default</code>, 파일 스코프
