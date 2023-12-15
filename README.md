@@ -246,7 +246,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/28-29-30-number-math-date/README.md">Number, Math, Date</a>
 </td>
 <td align="center">
-키워드
+<code>Number</code>, <code>Math</code>, <code>Date</code>
 </td>
 </tr>
 
