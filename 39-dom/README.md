@@ -48,7 +48,9 @@
 ### 상속 구조
 
 - 노드 객체는 자신의 구조와 정보 제어할 수 있는 API 사용할 수 있다.
-- (이미지 첨부)
+
+![DOM el prototype 상속](https://github.com/agnes0304/modern-javascript-deepdive-docs/assets/86249667/87e59842-0b0b-47dd-b13b-f3c4fc8f6fbf)
+
 - 공통된 기능일수록 프로토타입 체인 상위, 고유 기능일수록 프로토타입 체인 하위에 구축
 - 모든 객체는 Object, EventTarget, Node 인터페이스를 상속
     - 문서 노드: Document, HTMLDocument 인터페이스 상속
@@ -203,8 +205,14 @@ Node.prototype`.parentNode`
 - 컨테이너 `el` 노드를 생성해서 해결할 수 있음(예시: `<div></div>`)
     
     → 불필요한 div 태그가 생성됨 → `DocumentFragment` 노드로 해결
-     `DocumentFragment` 노드를 DOM에 추가하면 자신은 제거되고 자식노드만 DOM에 추가된다. 
-    | Document.prototype`.createDocumentFragement()` | • 빈 DocumentFragment 리턴 |
+
+- `DocumentFragment` 노드를 DOM에 추가하면 자신은 제거되고 자식노드만 DOM에 추가된다.
+
+	|프로퍼티|설명|
+	|:---|:---|
+	|Document.prototype`.createDocumentFragement()`| • 빈 DocumentFragment 리턴|
+
+	![documentFragment](https://github.com/agnes0304/modern-javascript-deepdive-docs/assets/86249667/947d03e6-315d-4ab8-8cdd-de4a4cb1dba0)
 
 </br></br>
 
