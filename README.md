@@ -231,10 +231,22 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 38
 </td>
 <td align="center">
-<a href="">html/css/JS는 어떻게 브라우저에 렌더링이 되는가</a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/38-browser-rendering/README.md">브라우저는 어떻게 렌더링하는가</a>
 </td>
 <td align="center">
 파싱, DOM, CSSOM, AST, 렌더트리, 리플로우(reflow), 리페인트(repaint), <code>async/defer</code>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+39
+</td>
+<td align="center">
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/39-dom/README.md">DOM(Document Object Model)</a>
+</td>
+<td align="center">
+DOM, 노드, DOM api
 </td>
 </tr>
 
@@ -288,6 +300,8 @@ JSON, <code>JSON.stringify</code>, <code>JSON.parse</code>, XMLHttpRequest,<code
 </tr>
 
 </table>
+
+
 
 
 
