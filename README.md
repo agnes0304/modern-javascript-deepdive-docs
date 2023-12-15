@@ -228,6 +228,101 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 
 <tr>
 <td align="center">
+27
+</td>
+<td align="center">
+배열(Array)
+</td>
+<td align="center">
+키워드
+</td>
+</tr>
+
+<tr>
+<td align="center">
+28, 29, 30
+</td>
+<td align="center">
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/28-29-30-number-math-date/README.md">Number, Math, Date</a>
+</td>
+<td align="center">
+키워드
+</td>
+</tr>
+
+<tr>
+<td align="center">
+31
+</td>
+<td align="center">
+정규 표현식(RegExp)
+</td>
+<td align="center">
+키워드
+</td>
+</tr>
+
+<tr>
+<td align="center">
+32
+</td>
+<td align="center">
+문자열(String)
+</td>
+<td align="center">
+키워드
+</td>
+</tr>
+
+<tr>
+<td align="center">
+33
+</td>
+<td align="center">
+7번째 타입, Symbol
+</td>
+<td align="center">
+키워드
+</td>
+</tr>
+
+<tr>
+<td align="center">
+34, 46
+</td>
+<td align="center">
+이터러블, 이터레이터, 제너레이터
+</td>
+<td align="center">
+키워드
+</td>
+</tr>
+<tr>
+<td align="center">
+35, 36
+</td>
+<td align="center">
+스프레드 문법과 구조분해할당
+</td>
+<td align="center">
+키워드
+</td>
+</tr>
+
+<tr>
+<td align="center">
+37
+</td>
+<td align="center">
+Set과 Map
+</td>
+<td align="center">
+키워드
+</td>
+</tr>
+
+<tr>
+<td align="center">
 38
 </td>
 <td align="center">
