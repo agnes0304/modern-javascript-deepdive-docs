@@ -32,11 +32,11 @@
 <table>
 <tr>
   
-<th align="center" width="160">
+<th align="center" width="150">
 CHAPTER
 </th>
   
-<th align="center" width="410">
+<th align="center" width="420">
 TITLE
 </th>
   
