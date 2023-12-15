@@ -63,7 +63,7 @@
 
 # DOM API
 
->`el` 노드와 `txt` 노드에 한 하여 설명. <a href=””>att 노드 바로가기</a>
+>`el` 노드와 `txt` 노드에 한 하여 설명. <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/39-dom/README.md#att-%EB%85%B8%EB%93%9C">att 노드 바로가기</a>
 
 ### 1. 노드 취득
 | 프로퍼티 | 설명 |
@@ -208,7 +208,7 @@ Node.prototype`.parentNode`
 
 </br></br>
 
-# `att` 노드
+## `att` 노드
 
 - 복수개일 수 있음.
 - 특정 `el` 노드의 모든 `att` 노드 참조는 `NamedNodeMap` 객체(유사배열, iterable)로 `el` 노드의 attributes 프로퍼티에 저장
