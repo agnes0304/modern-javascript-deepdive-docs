@@ -252,25 +252,13 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 
 <tr>
 <td align="center">
-31
+31, 32
 </td>
 <td align="center">
-정규 표현식(RegExp)
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/31-32-regExp-string/README.md">정규 표현식과 문자열🚧</a>
 </td>
 <td align="center">
-키워드
-</td>
-</tr>
-
-<tr>
-<td align="center">
-32
-</td>
-<td align="center">
-문자열(String)
-</td>
-<td align="center">
-키워드
+<code>RegExp</code>, 플래그, 패턴, String
 </td>
 </tr>
 
