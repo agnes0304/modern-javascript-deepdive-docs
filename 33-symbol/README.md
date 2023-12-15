@@ -57,8 +57,4 @@ const Direction = {
 
 </br>
 
-### Symbol과 프로퍼티 키
 
-(여기서 부터 다시)
-
-### Symbol과 프로퍼티 은닉
