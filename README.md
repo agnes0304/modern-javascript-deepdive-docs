@@ -267,10 +267,10 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 33
 </td>
 <td align="center">
-7번째 타입, Symbol
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/33-symbol/README.md">7번째 타입 Symbol</a>
 </td>
 <td align="center">
-키워드
+Symbol
 </td>
 </tr>
 
