@@ -57,4 +57,26 @@ const Direction = {
 
 </br>
 
+### Symbol과 프로퍼티 키
 
+- 프로퍼티 키로 사용할 심벌값에 대괄호 사용
+
+```jsx
+const obj = {
+	[Symbol.for('something')]:1
+}
+```
+
+</br>
+
+### Symbol과 프로퍼티 은닉
+
+- 위의 방법으로 생성한 프로퍼티는 `for…in` 문, `Objects.keys`, `Object.getOwnPropertyNames`로 찾을 수 없음
+- 예외: `Object.getOwnPropertySymbols`사용하면 찾을 수 있어짐
+
+</br>
+
+### Symbol과 표준 빌트인 객체 확장
+
+- 표준 빌트인 객체에 사용자 정의 메서드를 추가하는 것은 권장하지 않으나
+- Symbol값을 키로 생성하는 경우 어떤 키와도 충돌되지 않아 안전할 수 있다.
