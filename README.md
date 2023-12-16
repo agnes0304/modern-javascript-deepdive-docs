@@ -302,10 +302,10 @@ Symbol
 37
 </td>
 <td align="center">
-Set과 Map
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/37-set-map/README.md">Set과 Map</a>
 </td>
 <td align="center">
-키워드
+Set, 집합연산, Map
 </td>
 </tr>
 
