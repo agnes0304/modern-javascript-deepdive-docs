@@ -120,7 +120,70 @@ console.log(size); // 3
 </br></br>
 
 # Map
->Ongoing...
+>키와 값의 쌍으로 이루어진 컬렉션
+
+#### 객체와의 차이점
+
+- 키로 객체를 포함한 모든 값을 사용⭐
+- iterable이다
+- map.size로 확인한다(.length아님)
 
 
-</br></br>
+</br>
+
+
+### Map 객체 생성자 함수
+
+```jsx
+const map = new Map(); // Map(0) {}
+const map2 = new Map(['key', 'val'], ['key2', 'val2']); // Map(2) {"key1" => "val1", "key2"=>"val2"}
+const map2 = new Map(['key', 'val'], ['key1', 'val2']); // Map(1) {"key1" => "val2"}
+
+```
+
+- iterable을 전달받아 Map객체 생성
+    - 이때 전달되는 iterable은 키와 값의 쌍으로 이뤄진 요소여야 함.
+    - 중복된 키가 들어오면 덮어쓰기
+    - `for…of`문, spread, 구조분해할당 전부 사용가능
+- `size`로 요소 개수 확인 가능(변경은 불가)
+
+</br>
+
+### Map 메서드
+
+- `.set(k, v)`
+    - `k`를 key, `v`를 value로 한 새로 추가된 Map 객체 리턴 → Set의 `add`과 같이 연속 호출 가능
+    - 중복된 키 일 경우 덮어쓰기, 에러 없음
+
+- `.get(k)`
+    - `k`를 key로 갖는 값 리턴
+    - 없으면 `undefined`
+
+- `.has(k)`
+    - 요소 존재 `boolean`값 리턴
+
+- `.delete(k)`
+    - 삭제 여부 `boolean` 리턴 → 연속 호출 불가
+    - 존재하지 않는 key로 삭제 시도시 에러 없이 무시
+
+- `.clear()`
+    - 일괄 삭제 후 `undefined`리턴
+
+- `.forEach(func(v,k,m))`
+    - 요소 순회
+    - 인수 `v`: 현재 순회 중인 요소 값
+    - 인수 `k`: 현재 순회 중인 요소 키
+    - 인수 `m`: 현재 순회중인 Map 객체 자체
+
+
+</br>
+
+### iterable이면서 iterator인 객체 리턴 메서드
+
+- `.keys()` : 호출한 Map객체의 키를 값으로 갖는 객체 리턴
+
+- `.values()`: 호출한 Map객체의 값를 값으로 갖는 객체 리턴
+
+- `.entries()`:호출한 Map객체의 키와 값을 값으로 갖는 객체 리턴
+
+</br>
