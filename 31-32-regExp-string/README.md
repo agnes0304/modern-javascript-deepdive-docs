@@ -158,3 +158,101 @@ secondRegexp.test(target); // true
 ---
 
 # String
+
+>표준 빌트인 객체
+
+</br>
+
+### 생성자 함수 String
+
+- `new`와 함께 호출, String 인스턴스 생성
+
+```jsx
+const str = new String(); // String { [[StringData]] : "" }
+const test = new String('test'); // String { 0: 't', 1:'e', 2:'s', 3:'t', length:4, [[StringData]] : 'test'}
+```
+
+- 유사 배열 객체이자 iterable : 인덱스로 접근 가능
+- 원시타입의 값(primitive value) : 변경 불가(immutable)
+- 문자열 아닌 값 전달 시 문자열로 변환
+- `new` 없이는 명시적 타입 변환으로 사용
+- `.length` : 문자열의 문자 개수
+
+</br>
+
+### String.prototype 메서드
+
+- String은 원시타입 값이므로 String 래퍼 객체도 read only 객체로 제공됨
+
+- `.indexOf(s, i)`
+    - 문자열`s` 검색하여 첫번째 인덱스 리턴
+    - 실패 시 `-1`리턴
+    - `i`: 검색을 시작할 인덱스 전달 (선택)
+
+- `.search(r)`
+    - 정규표현식 `r`과 매치하는 문자열 검색하여 인덱스 리턴
+    - 실패 시 `-1` 리턴
+
+- `.includes(s, i)`
+    - ES6에서 도입
+    - `s`여부 확인 후 boolean리턴
+    - `i`: 검색을 시작할 인덱스(선택)
+
+- `.startsWith(s, i)`
+    - ES6에서 도입
+    - `s`로 시작하는지 확인하여 boolean 리턴
+    - `i`: 검색을 시작할 인덱스(선택)
+
+- `.endsEith(s, l)`
+    - ES6에서 도입
+    - `s`로 끝나는지 확인하여 boolean 리턴
+    - `l`: 처음부터 검색할 문자열 길이(선택)
+
+- `.charAt(i)`
+    - `i`에 위치한 문자열 검색하여 리턴
+    - `i`가 범위 밖일 경우 빈 문자열 리턴
+    - `charCodeAt()`, `codePointAt()`이 유사하다
+
+- `subString(i, j)`
+    - 인덱스 `i`부터  ~ 인덱스 `j` 직전까지 문자열 리턴(`j`는 선택)
+    - `i > j`인 경우 교환되어 리턴된다
+    - `i < 0` / `NaN`인 경우 0으로 취급
+    - `i > 문자열 길이`인 경우 `str.length`로 취급
+    
+    >💡 파이썬 슬라이스 문법처럼 사용해 볼 수 있겠다
+    
+- `.slice(i, j)`
+    - `substring()`과 동일
+    - `i` 에 음수 전달 시 가장 뒤에서 부터 시작하여 문자열 잘라서 리턴
+
+- `.toUpperCase()` / `.toLowerCase()` : 각각 대문자, 소문자로 리턴
+
+- `.trim()` : 앞 뒤 공백 제거 후 리턴
+    - `trimStart()`, `trimEnd()`각각 앞, 뒤 공백만 제거후 리턴
+
+- `.repeat(n)`
+    - `n`만큼 반복해 연결한 문자열 리턴
+    - `n = 0` 이면 빈 문자열 리턴
+    - `n < 0` 이면 RangeError
+
+- `.replace(s, t)`
+    - 대상 문자열에서 `s`를 검색하여 `t`로 치환한 문자열 리턴
+    - 첫번째 결과만 치환
+    - `$&` : 검색된 문자열 → 특수한 교체 패턴 사용가능
+    - `s`에 정규 표현식 사용가능
+    - `t`에 치환 함수 전달가능: `s`를 매치한 결과를 `t`의 인수로 전달하여 호출하고 치환함수가 리턴한 결과와 매치결과를 치환(즉 매치한 결과를 치환함수에 넣고 그 결과값을 리턴)
+
+- `.split(s, l)`
+    - `s`(문자열/정규표현식)을 검색해서 구분하고 분리된 각 문자열로 이뤄진 배열 리턴
+    - 빈 문자 전달 시 문자 단위 구분한 배열 리턴
+    - 인수 생략 시 문자열 전체를 단일 요소 하는 배열 리턴
+    - `l`: 배열의 길이를 지정할 수 있다
+    
+    ```jsx
+    const str = "Hello, Hi"
+    str.split(', '); // ["Hello", "hi"]
+    str.split(); // ["Hello, Hi"]
+    str.split("") // ["H", "e", "l", "l", "o", ",", " ", "H", "i"]
+    ```
+    
+    *Array.prototype`.reverse`, `join`으로 문자열 뒤집을 수 있다
