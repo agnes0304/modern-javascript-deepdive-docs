@@ -80,3 +80,13 @@ const obj = {
 
 - 표준 빌트인 객체에 사용자 정의 메서드를 추가하는 것은 권장하지 않으나
 - Symbol값을 키로 생성하는 경우 어떤 키와도 충돌되지 않아 안전할 수 있다.
+
+
+</br>
+
+### Well-known Symbol
+
+- JS가 기존 제공하는 빌트인 symbol값
+- Symbol 함수 프로퍼티에 할당되어 있음. → 브라우저 콘솔에 console.dir(Symbol)로 확인가능(아래 스크린샷 이미지 참조)
+  <img width="514" alt="Well known symbol 확인" src="https://github.com/agnes0304/modern-javascript-deepdive-docs/assets/86249667/e73f0bb9-9967-4932-bcc9-026f2176c61a">
+- JS엔진 내부 알고리즘에 사용 → 아직 이 부분 이해가 덜 됨(이터레이터 하고 다시 할 것)
