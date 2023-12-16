@@ -255,7 +255,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 31, 32
 </td>
 <td align="center">
-<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/31-32-regExp-string/README.md">정규 표현식과 문자열🚧</a>
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/31-32-regExp-string/README.md">정규 표현식과 문자열</a>
 </td>
 <td align="center">
 <code>RegExp</code>, 플래그, 패턴, String
