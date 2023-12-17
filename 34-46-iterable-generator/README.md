@@ -108,6 +108,125 @@
 
 # Generator
 
+>코드블록 실행을 일시 중지 했다가 필요한 시점에 재개
 
+- 제너레이터 함수는 함수 콜러에게 함수 실행의 제어권을 양도할 수 있다.
+    - 함수의 제어권을 함수가 독점하는게 아니라 콜러에게 양도(yield)할 수 있다
+- 제너레이터 함수는 함수 콜러와 함수 상태를 주고 받을 수 있다.
+    - 함수 콜러와 양방향으로 함수의 상태를 주고받을 수 있다
+- 제너레이터 함수를 호출하면 제너레이터 객체를 리턴한다.
+    - 이터러블이자 이터레이터인 제너레이터 객체
+
+</br>
+
+### 제너레이터 함수 정의
+
+- `function*`로 정의
+- 하나 이상의 `yield` 표현식
+- 화살표 함수로는 정의할 수 없음
+- `new` 연산자를 통해 생성자 함수로 호출 불가
+
+```jsx
+function* genDecFunc(){
+	yield 1;
+}
+```
+
+</br>
+
+### 제너레이터 객체
+
+- `Symbol.iterator`를 상속받는 이터러블(자료구조)이면서 `next`메서드를 소유하는 이터레이터(포인터)
+    - 즉, `Symbol.iterator` 메서드호출해서 이터레이터 생성할 이유 없음
+- return, throw 메서드를 가진다.
+    - `next`를 호출하면 `yield` 표현식까지 코드블록 실행하고 `yield`된 값을 `value` 프로퍼티값으로, `done`을 `false`로 하는 이터레이터 리절트 객체를 리턴
+    - `return` 호출하면 인수를 `value`로, `done`을 `true`로 하는 이터레이터 리절트 객체 리턴
+    - `throw` 호출하면 인수로받은 에러를 발생시키고 `undefined`를 `value`로 `done`을 `true`로 하는 이터레이터 리절트 객체 리턴
+    
+    ```jsx
+    function* genFunc() {
+    	try {
+    		yield 1;
+    		yield 2;
+    		yield 3;
+    	} catch(e){
+    		console.log(e)
+    	}
+    }
+    
+    const gen = genFunc();
+    console.log(gen.next()); // { value:1, done:false}
+    console.log(gen.return('End')); // { value: 'End', done:true} -> return을 호출하면 done이 true로 변경된다
+    console.log(gen.throw('Err')); // { value: undefined, done:true}
+    ```
+    
+</br>
+
+### 일시중지와 재개
+
+>위의 코드를 예시로 함
+
+- 호출자는 제너레이터 함수를 호출한 `gen`
+- 처음 next를 호출하면 첫번째 yield까지 실행되고 일시 중지, `gen`에게 제어권이 양도
+    - next는 { value: 1, done:false } 리턴
+- 다시 next를 호출하면 두번째 yield까지 실행되고 일시 중시, `gen`에게 제어권이 양도
+    - next는 { value: 2, done:false }
+- 네번째 호출에서 { value: undefined, done:true }
+- 제너레이터의 next에는 인수가 할당될 수 있음
+    - 제너레이터 함수 yield 표현식을 할당받는 변수에 할당
+
+
+</br>
+
+### 사용 
+
+>🫠 비동기 부분은 다시 코드 작성해봐야 함
+
+- 이터러블 구현
+    
+    ```jsx
+    const infiniteFib = (function*(){
+    	let [prev, curr] = [0,1];
+    
+    	while(true){
+    		[prev, curr] = [curr, prev+curr];
+    		yield curr
+    	}
+    
+    }());
+    
+    // infiniteFib는 무한 이터러블
+    for(const num of infiniteFib){
+    	if(num > 10000) break;
+    	console.log(num);
+    }
+    ```
+    
+- 비동기 처리
+    - then, catch, finally 없이 비동기 처리를 구현할 수 있다
+    
+    ```jsx
+    const fetch = require('node-fetch');
+    
+    const async = generatorFunc => { 
+    	const gen = generatorFunc(); // 2) 제너레이터 객체를 생성하고 
+    
+    	const onResolved = arg => {
+    		const result = generator.next(arg); // 5) 2에서 생성한 gen을 처음 호출한다
+    
+    		return result.done ? result.value : result.value.then(res => onResolved(res)); // 7) done이 아니니 재귀호출하겠지
+    	};
+    return onResolved; // 3) onResolved 함수를 리턴(상위 스코프의 generator 변수를 기억하는 클로저)
+    }
+    
+    (async(function* fetchTodo() { // 1) 이 함수가 호출되면 제너레이터 함수 fetchTodo를 호출해서 
+    	const url = 'http';
+    
+    	const res = yield fetch(url); // 6) 여기까지 실행되겠지 
+    	const todo = yield res.json();
+    	console.log(todo);
+    })()); // 4) onResolved를 즉시 호출해서 
+    
+    ```
 
 </br></br>
