@@ -331,3 +331,18 @@ console.log(Object.getOwnPropertyDescriptors([1,2,3]));
 - `.flatMap()`
     - `map`과 `flat`을 순차적으로 실행하는 효과
     - depth 1만 flat한다
+
+</br>
+
+### 고차함수 요약
+
+| 고차함수 종류 | 설명 | 리턴 값 |
+| --- | --- | --- |
+| forEach | 단순 반복 대체 | <code>undefined</code> |
+| map | 반복해서 새 배열 | <code>[new]</code> |
+| filter | 반복해서 true인 애들로만 새 배열 | <code>[new]</code> |
+| reduce | 반복하는데 전에 값에 누적한 값 리턴 | <code>newAccVal</code> |
+| find | 반복하다 최초 true인 요소 값 리턴 | <code>firstTrueVal</code> |
+| findIndex | 반복하다 최초 true인 요소 값 인덱스 리턴 | <code>firstTrueValIndex</code> |
+| some | 반복하다 한번이라도 true, true 리턴 | <code>T/F</code> |
+| every | 반복하다 한번이라도 false, false 리턴 | <code>T/F</code> |
