@@ -224,10 +224,10 @@ console.log(Object.getOwnPropertyDescriptors([1,2,3]));
 | .shift() || .includes() | .reduceRight() |
 | .unshift() || .join() | .map() |
 | .splice() | |.indexOf() | .forEach() |
-|  || .flat() | .every() |
-| .reverse() || .lastIndexOf() | .some() |
-| .fill() ||  | .find() |
-| .copyWithin() ||  | .findIndex() |
+| .reverse() || .flat() | .every() |
+| .fill() || .lastIndexOf() | .some() |
+| .copyWithin() ||  | .find() |
+|  ||  | .findIndex() |
 
 </br></br>
 
