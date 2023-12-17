@@ -290,10 +290,10 @@ iterable, iterator, <code>Symbol.iterator</code>, <code>next()</code>
 35, 36
 </td>
 <td align="center">
-스프레드 문법과 구조분해할당
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/35-36-spread-destructuring/README.md">스프레드 문법과 구조분해할당</a>
 </td>
 <td align="center">
-키워드
+전개문법, <code>...</code>, 얕은 복사, Rest element 사용
 </td>
 </tr>
 
