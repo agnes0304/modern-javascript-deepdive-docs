@@ -232,3 +232,102 @@ console.log(Object.getOwnPropertyDescriptors([1,2,3]));
 </br></br>
 
 # Higher-Order function(고차함수)
+
+>함수를 인수로 전달받거나 함수를 리턴하는 함수
+
+</br>
+
+### 특징
+
+- 불변성 지향하는 함수형 프로그래밍 기반
+
+>**함수형 프로그래밍?**
+>순수함수와 보조함수와 조합을 통해 
+>로직 내에 존재하는 조건문과 반복문을 제거하여 복잡성 해결하고 
+>변수 사용을 억제하여 상태변경을 피하려는 프로그래밍 기법
+
+## 종류
+
+- `.sort(callBackFn)` ✂️
+    - 배열 요소 정렬(기본 오름차순; asc)
+    - 내림차순 하려면 `sort` → `reverse`
+    - 퀵소트 알고리즘을 사용했었음 → 이후 ES10(2019)에서는 timsort 알고리즘 사용하게 바뀜
+    - 숫자 정렬은 특이하게 동작
+        - 유니코드 코드 포인트 순서를 따름
+        - 일시적으로 문자열 변경 후 유니코드 코드 포인트 순서로 정렬
+        
+        → 정렬 순서 정의 비교 함수를 인수로 전달해야 함
+        
+        ```jsx
+        const score = [40,100,1,5,2]
+        
+        score.sort((a,b)=> a-b); // 숫자 오름차순: 비교함수 리턴값이 0보다 작으면 a우선 정렬
+        score.sort((a,b)=> b-a); // 숫자 내림차순: 비교함수 리턴값이 0보다 작으면 b우선 정렬
+        
+        const todos = [
+        	{ id: 4, content:'JS'}
+        	{ id: 2, content:'TS'}
+        	{ id: 1, content:'Project'}
+        ]
+        
+        function compare(key){
+        	return (a,b)=>(a[key] > b[key] ? 1 : (a[key]<b[key]? -1: 0));
+        }
+        
+        todos.sort(compare('id'));// id를 기준으로 오름 차순 정렬
+        ```
+
+</br>
+
+### “배열 모든 요소 순회하면서 콜백함수 반복 호출하면서 … ”
+
+- `.forEach(callBackFn(val, index, arr), this)`
+    - for 문을 대체할 수 있는 고차함수. 리턴값은 늘 `undefined`
+    - `val`: 배열의 요소 값
+    - `index`: 인덱스
+    - `arr`: 배열 자체(this)
+    - `forEach`메서드 콜백함수 내부의 `this`는 `undefined`임. 일반 함수로 호출되니까. 근데 메서드 정의 시, `forEach`를 사용하는 상황에서 상위 스코프(메서드 내부)의 this와 일치시키기 위해서는 `forEach`의 두번째 인수로 `this`를 넘겨줘야 `forEach` 내부의 `this`와 바인딩이 된다.
+        
+        → 화살표 함수 사용하자(화살표 함수 내부에서 this 참조하면 그대로 참조가능)
+        
+    
+    ```jsx
+    const num = [1,2,3]
+    const pows = [];
+    
+    num.forEach(item => pows.push(item**2));
+    ```
+    
+- `.map(callBackFn(val, index, arr), this)`
+    - ⭐콜백함수 리턴값으로 새 배열 리턴(forEach와 차이)
+    - map 두번째 인수로 this 넘길 수 있음 → 화살표 함수 쓰자…
+- `.filter(callBackFn(val, index, arr), this)`
+    - 리턴값이 `true`인 애들로만 구성된 새 배열 리턴
+- `.reduce(callBackFn(initVal, val, index, arr), initVal)`
+    - 콜백함수 리턴값을 다음 순회 시에 콜백함수 첫번째 인수로 전달하면서 호출 하나의 결과값을 만들어 반환
+    - initVal은 선택사항이지만 전달하는 편이 안전하다
+        - 누적한다
+        
+        ```jsx
+        const arr = [1,2,3,4]
+        
+        const sum = arr.reduce((acc, val, i, arr) => acc + val, 0); // 10
+        ```
+        
+    - 평균구하기, 최대값구하기(`Math.max`쓰자), 중복값 구하기
+- `.some(callBackFn(val, index, arr), this)`
+    - 콜백함수의 리턴값이 단 한번이라도 참이면 true, 모두 거짓이면 false를 리턴
+    - 호출한 배열이 빈 배열이라면 false
+- `.every(callBackFn(val, index, arr), this)`
+    - 콜백함수의 리턴값이 모두 참이면 true, 하나라도 거짓이면 false
+    - 호출한 배열이 빈 배열이라면 true
+- `.find(callBackFn(val, index, arr), this)`
+    - 콜백함수의 리턴값이 true인 첫번째 **요소**(처음 만나는 true)
+    - true없으면 `undefined`리턴
+    - 배열을 리턴하는 filter와 다르게 요소값 하나를 리턴
+- `.findIndex(callBackFn(val, index, arr), this)`
+    - 콜백함수의 리턴값이 true인 첫번째 요소의 **인덱스 값**
+    - true없으면 `-1` 리턴
+- `.flatMap()`
+    - `map`과 `flat`을 순차적으로 실행하는 효과
+    - depth 1만 flat한다
