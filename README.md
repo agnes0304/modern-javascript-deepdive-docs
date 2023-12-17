@@ -279,10 +279,10 @@ Symbol
 34, 46
 </td>
 <td align="center">
-이터러블, 이터레이터, 제너레이터
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/34-46-iterable-generator/README.md">이터러블, 이터레이터, 제너레이터</a>
 </td>
 <td align="center">
-키워드
+iterable, iterator, <code>Symbol.iterator</code>, <code>next()</code> 
 </td>
 </tr>
 <tr>
