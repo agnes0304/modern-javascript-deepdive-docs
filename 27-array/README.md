@@ -221,13 +221,13 @@ console.log(Object.getOwnPropertyDescriptors([1,2,3]));
 | --- | --- | --- | --- |
 | .push() | .sort() | .concat() | .filter() | 
 | .pop() | | .slice() | .reduce() |
-| .shift() || .includes() | .reduceRight() |
-| .unshift() || .join() | .map() |
-| .splice() | |.indexOf() | .forEach() |
-| .reverse() || .flat() | .every() |
-| .fill() || .lastIndexOf() | .some() |
-| .copyWithin() ||  | .find() |
-|  ||  | .findIndex() |
+| .shift() || .includes() | .map() |
+| .unshift() || .join() | .forEach() |
+| .splice() | |.indexOf() | .every() |
+| .reverse() || .flat() | .some() |
+| .fill() || .lastIndexOf() | .find() |
+| .copyWithin() ||  | .findIndex() |
+
 
 </br></br>
 
