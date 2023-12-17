@@ -101,3 +101,13 @@
 
 - 이터레이터의 next를 호출하면서 iterator result object의 value를 for … of 문의 변수에 할당해줌
 - done이 false이면 순회를 계속하고 true면 for문을 빠져나옴
+
+</br></br></br>
+
+---
+
+# Generator
+
+
+
+</br></br>
