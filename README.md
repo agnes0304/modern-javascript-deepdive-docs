@@ -231,10 +231,10 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 27
 </td>
 <td align="center">
-배열(Array)
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/27-array/README.md">배열(Array)과 고차함수</a>
 </td>
 <td align="center">
-키워드
+배열은 배열이 아니다, 고차함수
 </td>
 </tr>
 
