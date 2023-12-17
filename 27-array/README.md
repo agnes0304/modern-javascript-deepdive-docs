@@ -217,19 +217,17 @@ console.log(Object.getOwnPropertyDescriptors([1,2,3]));
 
 ### 원본 배열 변경 여부 정리
 
-| 원본 배열 변경 | 원본 배열 변경 없음 | 원본 배열 변경 없는 고차함수 |
-| --- | --- | --- |
-| .push() | .concat() | .filter() |
-| .pop() | .slice() | .reduce() |
-| .shift() | .includes() | .reduceRight() |
-| .unshift() | .join() | .map() |
-| .splice() | .indexOf() | .forEach() |
-| .sort() | .flat() |  |
-| .reverse() | .every() |  |
-| .fill() | .some() |  |
-| .copyWithin() | .find() |  |
-|  | .findIndex() |  |
-|  | .lastIndexOf() |  |
+| ✂️원본 배열 변경 | ✂️원본 배열 변경 고차함수 | 원본 배열 변경 없음 | 원본 배열 변경 없는 고차함수 |
+| --- | --- | --- | --- |
+| .push() | .sort() | .concat() | .filter() | 
+| .pop() | | .slice() | .reduce() |
+| .shift() || .includes() | .reduceRight() |
+| .unshift() || .join() | .map() |
+| .splice() | |.indexOf() | .forEach() |
+|  || .flat() | .every() |
+| .reverse() || .lastIndexOf() | .some() |
+| .fill() ||  | .find() |
+| .copyWithin() ||  | .findIndex() |
 
 </br></br>
 
