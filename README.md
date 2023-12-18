@@ -335,6 +335,18 @@ DOM, 노드, DOM api
 
 <tr>
 <td align="center">
+40
+</td>
+<td align="center">
+이벤트
+</td>
+<td align="center">
+event
+</td>
+</tr>
+
+<tr>
+<td align="center">
 41, 42, 45, 46
 </td>
 <td align="center">
@@ -379,6 +391,18 @@ JSON, <code>JSON.stringify</code>, <code>JSON.parse</code>, XMLHttpRequest,<code
 </td>
 <td align="center">
 <code>export</code>, <code>import</code>, <code>default</code>, 파일 스코프
+</td>
+</tr>
+
+<tr>
+<td align="center">
+49
+</td>
+<td align="center">
+바벨, 웹팩
+</td>
+<td align="center">
+babel, webpack
 </td>
 </tr>
 
