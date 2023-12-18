@@ -157,7 +157,7 @@ obj.__proto__ = parent; // -> setter함수인 set __proto__호출
 - 객체간의 상속관계를 동적으로 변경
 - 프로토타입은 생성자 함수 혹은 인스턴스에 의해 교체할 수 있음
 
-#### 생성자함수에 의한 교체
+#### 1) 생성자함수에 의한 교체
 
 ```jsx
 const Person = (function () {
@@ -183,7 +183,7 @@ const kim = new Person('Kim')
 - `Person` 생성자 함수가 생성할 객체의 프로토타입을 객체 리터럴로 교체
     - 객체 리터럴에는 constructor가 없음
 
-#### 인스턴스에 의한 교체
+#### 2) 인스턴스에 의한 교체
 
 - 인스턴스의 `__proto__`로 접근가능한 점을 활용
     - `__proto__`는 사용을 지양하기로 → `setPrototypeOf()`활용
