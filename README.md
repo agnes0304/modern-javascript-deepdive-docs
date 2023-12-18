@@ -114,7 +114,7 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/12-18-26-function-firstClassObject-es6Function/README.md">함수, 일급객체, ES6 함수의 추가 기능</a>
 </td>
 <td align="center">
-함수, 일급객체, 함수객체, arguments, <code>__proto__</code>
+함수, 일급객체, 함수객체, arguments, <code>__proto__</code>, ES6 메서드, 화살표 함수, Rest 파라미터(<code>...</code>), 파라미터 기본값
 </td>
 </tr>
 
@@ -147,10 +147,10 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 17
 </td>
 <td align="center">
-생성자 함수에 의한 객체 생성
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/17-constructor/README.md">생성자 함수에 의한 객체 생성</a>
 </td>
 <td align="center">
-생성자함수, 객체
+생성자함수, <code>Object();</code>, constructor, non-constructor, <code>new</code>, <code>new.target</code>
 </td>
 </tr>
 
