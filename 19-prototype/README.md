@@ -64,7 +64,7 @@ obj.__proto__ = parent; // -> setter함수인 set __proto__호출
 
 | 구분 | 소유 | 값 | 사용주체 | 사용목적 |
 | --- | --- | --- | --- | --- |
-| __proto__ | 모든 객체 | 프로토타입 참조 | 모든 객체 | 자신의 프로토타입에 접근, 교체하기 위해 사용 |
+| `__proto__` | 모든 객체 | 프로토타입 참조 | 모든 객체 | 자신의 프로토타입에 접근, 교체하기 위해 사용 |
 | prototype | constructor | 프로토타입 참조 | 생성자 함수 | 자신이 생성할 인스턴스에게 프로토타입 할당하려고 사용 |
 
 ![프로토타입 예시](https://github.com/agnes0304/modern-javascript-deepdive-docs/assets/86249667/2e6aa03b-ebaa-444b-86ad-dde981e28859)
@@ -93,33 +93,30 @@ obj.__proto__ = parent; // -> setter함수인 set __proto__호출
 
 - 생성자 함수가 생성되는 시점에 생성
 
-#### 사용자 정의 생성자 함수
+#### 1) 사용자 정의 생성자 함수
 
 - 함수 정의가 평가되어 함수 객체를 생성하는 시점에 프로토타입도 더불어 생성
 - 함수 선언문으로 정의된 함수는 어떤 코드보다도 먼저 평가 → 함수 객체 생성
     - 이때 프로토타입도 생성
+    - 생성자 함수의 prototype에 바인딩 된 객체
 
-#### 빌트인 생성자 함수
+#### 2) 빌트인 생성자 함수
 
 - 빌트인 생성자 함수가 생성되는 시점에 프로토타입 생성
 
 </br>
 
-### 객체 생성 방식과 프로토타입의 결정
+>### 객체 생성 방식과 프로토타입의 결정
+>
+>- 객체 생성방식
+>    - 객체 리터럴, Object 생성자 함수, 생성자 함수, Object.create 메서드, 클래스
+>- 전부 추상 연산 OrdinaryObjectCreate에 의해서 생성
+>    - 추상연산으로 빈 객체를 생성
+>    - 객체에 추가할 프로퍼티 목록이 인수로 전달된 경우 프로퍼티를 객체에 추가
+>    - **인수로 전달받은 프로토타입**을 생성한 객체의 프로토타입 슬롯에 할당
+>    - 객체 리턴
 
-- 객체 생성방식
-    - 객체 리터럴, Object 생성자 함수, 생성자 함수, Object.create 메서드, 클래스
-- 전부 추상 연산 OrdinaryObjectCreate에 의해서 생성
-    - 추상연산으로 빈 객체를 생성
-    - 객체에 추가할 프로퍼티 목록이 인수로 전달된 경우 프로퍼티를 객체에 추가
-    - **인수로 전달받은 프로토타입**을 생성한 객체의 프로토타입 슬롯에 할당
-    - 객체 리턴
 
-#### 달라지는 프로토타입
-
-- 객체리터럴 : 추상연산에 전달되는 프로토타입은 Object.prototype
-- Object 생성자 함수: 추상연산에 전달되는 프로토타입은 Object.prototype
-- 생성자 함수: 생성자 함수의 prototype에 바인딩 된 객체
 
 </br></br>
 
@@ -128,12 +125,23 @@ obj.__proto__ = parent; // -> setter함수인 set __proto__호출
 - 상속과 프로퍼티 검색을 위한 메커니즘
     
     >식별자 검색을 위한 메커니즘? 스코프 체인
+
+- JS는 객체의 프로퍼티에 접근하고자 할 때 해당 객체에 프로퍼티가 없다면 `[[Prototype]]` 내부슬롯을 따라서 부모 역할의 프로퍼티를 순차 검색함
     
 - `Object.prototype`
     - 프로토타입의 프로토타입
     - 프로토타입 체인 종점
     - `[[Prototype]]` 내부 슬롯은 null
-- JS는 객체의 프로퍼티에 접근하고자 할 때 해당 객체에 프로퍼티가 없다면 `[[Prototype]]` 내부슬롯을 따라서 부모 역할의 프로퍼티를 순차 검색함
+
+- `instanceof` 연산자
+	- 생성자 함수의 prototype에 바인딩된 객체가 좌변 객체의 프로토타입 체인 상에 존재하면 true, 아니면 false
+
+	```jsx
+	객체 instanceof 생성자함수
+	```
+
+	- 우변의 피연사자가 함수가 아니면 TypeError
+	
 
 ![프로토타입 체인](https://github.com/agnes0304/modern-javascript-deepdive-docs/assets/86249667/62018d59-92cd-497b-8bec-7aef44eb557a)
 
@@ -211,21 +219,11 @@ lee.sayHello();
 
 → 가능한 프로토타입 교체는 지양하자
 
-</br>
-
-### instanceof 연산자
-
-```jsx
-객체 instanceof 생성자함수
-```
-
-- 우변의 피연사자가 함수가 아니면 TypeError
-- 생성자 함수의 prototype에 바인딩된 객체가 좌변 객체의 프로토타입 체인 상에 존재하면 true, 아니면 false
-
+</br></br>
 
 # 상속
 
-### `Object.create(a,b*)` 메서드로 직접 상속
+### 1. `Object.create(a,b*)` 메서드로 직접 상속
 
 - 명시적으로 프로토타입을 지정, 새로운 객체 생성
 - 추상 연산 호출
@@ -237,8 +235,10 @@ lee.sayHello();
     - 객체 리터럴에 의해 생성된 객체도 상속 받을 수 있음
 - 단점
     - 두번째 인자로 프로퍼티 정의하는 것 번거로움
+ 
+</br>
 
-### 객체 리터럴 내부에서 `__proto__`에 의해 직접 상속
+### 2. 객체 리터럴 내부에서 `__proto__`에 의해 직접 상속
 
 ```jsx
 const myPrototype = {
@@ -260,5 +260,68 @@ const obj = Object.create(myPrototype, {
 
 </br></br>
 
-## 정적 프로퍼티, 메서드
+# 정적 프로퍼티, 메서드
+
+- 생성자 함수로 인스턴스를 생성하지 않아도 참조/호출할 수 있는 프로퍼티/메서드
+
+```jsx
+function User (name) {
+	this.name = name;
+}
+
+User.prototype.method = function(){}
+
+User.staticMethod = function(){}
+
+User.staticProp = 'static prop';
+
+const jiwoo = new User('Jiwoo');
+
+const.method(); // 가능
+User.staticMethod(); // 가능
+jiwoo.staticMethod(); // 불가
+```
+
+- 정적 프로퍼티와 메서드는 인스턴스의 프로토타입 체인상에 존재하지 않음
+
+</br></br>
+
+# 프로퍼티 존재 확인
+
+- `in` 연산자
+    
+    ```jsx
+    key in obj
+    ```
+    
+    - 상속받은 모든 프로토타입의 프로퍼티를 확인
+
+- `Reflect.has( 객체참조, 프로퍼티키 )`
+    - ES6에 도입
+    - `in`연산자와 동일하게 동작(상속받은 모든 프로토타입의 프로퍼티 확인)
+
+- `객체참조.hasOwnProperty( 프로퍼티 키 )`
+    - 객체 고유 프로퍼티 키인 경우만 true
+
+
+</br>
+
+# 프로퍼티 열거
+
+- `for ... in`문
+    
+    ```jsx
+    for (변수선언문 in 객체){...}
+    ```
+    
+    - 객체 프로퍼티 개수만큼 순회
+    - 객체가 상속받은 모든 프로토타입의 프로퍼티 중 `[[enumerable]]` true 열거
+        - 키가 Symbol인 프로퍼티는 열거 제외
+        - 순서대로 나오겠지만 순서 보장하는 건 아님
+
+- Object.keys/values/entries
+    - 객체 고유의 프로퍼티만 열거
+    - `Object.keys(객체참조)`: enumerable 프로퍼티 키를 배열로 리턴
+    - `Object.values(객체참조)`: enumerable 프로퍼티 값을 배열로 리턴
+    - `Object.entries(객체참조)`: enumerable 프로퍼티 키-값 쌍 배열로 리턴
 
