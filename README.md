@@ -135,10 +135,10 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 16
 </td>
 <td align="center">
-프로퍼티 어트리뷰트(Property Attribute)
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/16-property-attribute/README.md">프로퍼티 어트리뷰트(Property Attribute)</a>
 </td>
 <td align="center">
-내부 슬롯, 내부 메서드
+내부 슬롯, 내부 메서드, 데이터 프로퍼티, 접근자 프로퍼티, 프로퍼티 디스크립터
 </td>
 </tr>
 
