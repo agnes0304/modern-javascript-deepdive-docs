@@ -159,10 +159,10 @@ object, <code>pass by value</code>, <code>pass by reference</code>
 19
 </td>
 <td align="center">
-프로토타입
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/19-prototype/README.md">프로토타입</a>
 </td>
 <td align="center">
-<code>prototype</code>, <code>__proto__</code>
+<code>prototype</code>, <code>__proto__</code>, 프로토타입 체인, <code>instanceof</code>, <code>in</code>, 
 </td>
 </tr>
 
