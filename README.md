@@ -338,10 +338,10 @@ DOM, 노드, DOM api
 40
 </td>
 <td align="center">
-이벤트
+<a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/40-event/README.md">이벤트</a>
 </td>
 <td align="center">
-event
+이벤트 타입, 이벤트 핸들러, <code>addEventListener</code>, 이벤트 객체, 커스텀 이벤트, <code>dispatchEvent</code>, 이벤트 전파와 위임, <code>preventDefault</code>, <code>stopPropagation</code>
 </td>
 </tr>
 
