@@ -136,7 +136,8 @@ console.log(me.fullName); // 'Jiwoo Choi'
 
 >프로토타입은 체인을 통해 자산을 상속받고 클래스는 기존 클래스를 상속받아 새로 확장 정의한다
 
-(스크린샷)
+![클래스 상속과 프로토타입 상속](https://github.com/agnes0304/modern-javascript-deepdive-docs/assets/86249667/2430f0f4-5f07-40c7-8e0c-f43e99a070bc)
+>책에서 가져옴
 
 - 프로토타입 상속과는 다른개념
 - `extends`를 통해 상속받고 확장해갈 수 있음
