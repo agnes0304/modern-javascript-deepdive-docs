@@ -9,7 +9,7 @@
     - `setTimeout`/`clearTimeout`
     - `setInterval`/`clearInterval`
 - setTimeout는 딱 한번 동작, interval은 반복동작
-- 비동기 처리 방식으로 동작 → 비동기 프로그래밍 설명 <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/42-45-46-async-promise-generator-await/README.md#%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">바로가기</a>
+- 비동기 처리 방식으로 동작 → 비동기 프로그래밍 설명 <a href="https://github.com/agnes0304/modern-javascript-deepdive-docs/blob/main/41-42-45-46-timer-async-promise-generator-await/README.md#%EB%B9%84%EB%8F%99%EA%B8%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">바로가기</a>
 
 </br>
 
