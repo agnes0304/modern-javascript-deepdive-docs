@@ -35,3 +35,28 @@ const cancellable = function(fn, args, t) {
 };
 
 
+
+// 📍 Leetcode 2725. Interval Cancellation
+
+// 위에랑 같은데 이번엔 0초부터 실행하고 interval cancel 하는 거.
+
+
+/**
+ * @param {Function} fn
+ * @param {Array} args
+ * @param {number} t
+ * @return {Function}
+ */
+var intervalCancellable = function(fn, args, t) {
+    
+    fn(...args)
+    const timer = setInterval(()=>{
+        fn(...args)      
+    }, t)
+
+    const cancelFn = function () {
+        clearInterval(timer);
+    }
+
+    return cancelFn;
+};
