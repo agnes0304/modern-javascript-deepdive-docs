@@ -1,4 +1,4 @@
-// leetcode finbonacci generator
+// 📍 Leetcode Finbonacci generator
 
 /* Write a generator function that returns a generator object which yields the fibonacci sequence.
 The fibonacci sequence is defined by the relation Xn = Xn-1 + Xn-2.
