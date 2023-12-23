@@ -63,3 +63,17 @@ var intervalCancellable = function(fn, args, t) {
 
 
 
+// 📍 Leetcode 2627. Debounce
+
+/* setTimeout 제대로 이해했으면 쓸데없이 호출한 시간 Date.now로 담지 않았을 듯 */
+
+var debounce = function (fn, t) {
+    let timer;
+
+    return function (...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            fn(...args)
+        },t)
+    }
+};
